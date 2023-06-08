@@ -1,0 +1,23 @@
+.container {
+  height: 60px;
+  background-color: var(--dark-blue);
+  padding: 0 30px;
+  display: grid;
+  align-items: center;
+}
+
+.container > ul {
+  display: flex;
+  justify-content: right;
+  column-gap: 15px;
+}
+
+.menu-icons > li > a {
+  color: var(--light-yellow);
+  transition: all 350ms;
+}
+.menu-icons > li:hover > a {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+  padding: 0 10px;
+}
