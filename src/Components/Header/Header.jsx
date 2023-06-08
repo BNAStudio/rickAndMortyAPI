@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import css from './Header.module.css'
 
-// const URL = "https://rickandmortyapi.com/api"
+
 
 const Header = () => {
     return (
-        <header className={css.container}>
+        <header className={css["header-container"]}>
             <ul className={css["menu-icons"]}>
                 <li >
                     <Link to="/">Home</Link>
