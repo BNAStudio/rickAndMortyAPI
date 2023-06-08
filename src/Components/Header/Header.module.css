@@ -1,12 +1,14 @@
-.container {
+.header-container {
   height: 60px;
   background-color: var(--dark-blue);
   padding: 0 30px;
   display: grid;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
-.container > ul {
+.header-container > ul {
   display: flex;
   justify-content: right;
   column-gap: 15px;

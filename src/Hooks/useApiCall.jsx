@@ -6,12 +6,13 @@ export const useApiCall = (url) => {
     const [loading, setLoading] = useState(true)
     const [dataInfo, setDataInfo] = useState([]);
 
-    const fetchApi = async () => {
+    const fetchData = async () => {
         setLoading(true)
         try {
             const response = await fetch(url);
             const data = await response.json();
             if (dataInfo) { setDataInfo(data) }
+            setDataInfo(data);
         } catch (error) {
             console.error(error);
         }
@@ -19,8 +20,8 @@ export const useApiCall = (url) => {
     }
 
     useEffect(() => {
-        fetchApi()
+        fetchData()
     }, [url])
 
-    return [dataInfo, loading]
+    return { dataInfo, loading }
 }

@@ -16,7 +16,8 @@ body {
 }
 
 :root {
-  --bg: #392c21;
+  --bg: rgb(21, 20, 20);
+  --brown: #392c21;
   --white: rgb(230, 226, 226);
   --light-blue: #62a4ab;
   --dark-blue: #0f3c80;

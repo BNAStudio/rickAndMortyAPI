@@ -1,0 +1,42 @@
+.home-container {
+  background: var(--bg);
+  width: 100%;
+  height: 100vh;
+}
+.titles {
+  text-align: center;
+  padding: 20px;
+}
+.main-title {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  text-shadow: 0 0 10px var(--dark-yellow), 0 0 20px var(--light-yellow);
+}
+.sub-title {
+  font-size: 2rem;
+  color: var(--white);
+}
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.btn {
+  color: var(--white);
+  font-size: 1rem;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  transition: 0.3s;
+  background-color: #1976d2;
+  cursor: pointer;
+}
+.btn:hover {
+  font-size: 1.25rem;
+  transform: scale(1.05);
+}
+.btn:active {
+  font-weight: bold;
+}
