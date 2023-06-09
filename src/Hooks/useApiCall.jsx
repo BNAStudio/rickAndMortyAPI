@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo } from "react"
 
 export const useApiCall = (url) => {
     const [loading, setLoading] = useState(true)
@@ -22,6 +22,8 @@ export const useApiCall = (url) => {
     useEffect(() => {
         fetchData()
     }, [url])
+
+    const memoData = useMemo(() => dataInfo, [dataInfo])
 
     return { dataInfo, loading }
 }

@@ -1,14 +1,71 @@
+:root {
+  --width: 400px;
+  --height: 500px;
+}
+
 .grid-container {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: 250px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: var(--height);
+  grid-template-columns: repeat(auto-fill, minmax(var(--width), 1fr));
   justify-items: center;
   padding: 20px;
 }
 
 .card {
-  width: 200px;
-  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: var(--width);
+  min-height: 500px;
   border: 1px solid red;
+  color: white;
+  padding: 10px;
+}
+
+.image {
+  width: 200px;
+  /* height: max-content; */
+  border-radius: 50%;
+  border: 1px solid blue;
+  /* object-fit: cover; */
+}
+
+.character-info-container {
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  flex-wrap: wrap;
+}
+
+.character-name {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+.general {
+  display: inline-flex;
+  /* justify-content: center; */
+  gap: 10px;
+}
+.info-character {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+.info-character > b {
+  margin-right: 5px;
+}
+
+.episodes-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+  width: 100%;
+  height: 180px;
+  overflow-x: hidden;
+  overflow-x: auto;
+  text-align: center;
+  flex-direction: column;
 }
